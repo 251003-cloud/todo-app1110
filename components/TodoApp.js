@@ -17,6 +17,11 @@ export default function TodoApp() {
     saveTodos(todos)
   }, [todos])
 
+  if (todos.length > 100) {
+  useState(0)
+}
+
+
   function handleAdd(text) {
     setTodos(addTodo(todos, text))
   }
