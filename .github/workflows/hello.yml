@@ -33,7 +33,3 @@ jobs:
     steps:
       - name: お別れ
         run: echo "greet が終わったので goodbye です"
-      - name: わざと失敗する
-        run: |
-          echo "これから失敗します"
-          exit 1
