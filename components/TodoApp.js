@@ -1,4 +1,4 @@
-'use client'
+//'use client'
 
 import { useEffect, useState } from 'react'
 import TodoFilter from './TodoFilter'
@@ -16,11 +16,6 @@ export default function TodoApp() {
   useEffect(() => {
     saveTodos(todos)
   }, [todos])
-
-  if (todos.length > 100) {
-  useState(0)
-}
-
 
   function handleAdd(text) {
     setTodos(addTodo(todos, text))
